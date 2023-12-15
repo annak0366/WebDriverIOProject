@@ -28,7 +28,7 @@ jobs:
       working-directory: cypress-realworld-app
 
     - name: Run Real World App Locally
-      run: yarn dev
+      run: yarn dev &
       working-directory: cypress-realworld-app
 
     - name: Run Tests
