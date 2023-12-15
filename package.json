@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
+    "dev": "yarn dev",
     "test:headless": "wdio run ./wdio.conf.js --headless",
     "test:chrome":"wdio chrome.conf.js",
     "test:firefox": "wdio firefox.conf.js",
