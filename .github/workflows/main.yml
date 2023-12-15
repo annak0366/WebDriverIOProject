@@ -7,7 +7,7 @@ on:
 
 jobs:
   tests:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
@@ -18,8 +18,15 @@ jobs:
       with:
         node-version: 18
     
+    - name: Install Yarn
+      run: npm install -g yarn
+  
+    
     - name: Install Dependencies
       run: npm install
+
+    - name: Run Application Locally
+      run: yarn dev
 
     - name: Run Tests
       run: npm test
