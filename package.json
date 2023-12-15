@@ -10,8 +10,7 @@
     "test:firefox": "wdio firefox.conf.js",
     "test:edge": "wdio edge.conf.js",
     "test:report": "allure generate allure-results --clean -o allure-report",
-    "open:report": "allure open allure-report",
-    "install": "npm install"
+    "open:report": "allure open allure-report"
   },
   "keywords": [],
   "author": "",
