@@ -1,11 +1,12 @@
-name: Run Real World App
+name: WebDriverIO Tests
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  install_and_run:
+  install_and_run_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,24 +18,18 @@ jobs:
       with:
         node-version: 18
 
-    - name: Create Working Directory
-      run: mkdir -p /home/runner/work/WebDriverIOProject/WebDriverIOProject/cypress-realworld-app
-
     - name: Install Yarn
-      run: npm install -g yarn
+      run: npm install -g yarn@1
 
     - name: Install Dependencies
       run: yarn install
+
+    - name: Run Application Locally
+      run: yarn dev
       working-directory: cypress-realworld-app
 
-    - name: Run Real World App Locally
-      run: yarn dev &
-      working-directory: cypress-realworld-app
-
-    - name: Install npm dependencies
+    - name: Install Project Dependencies
       run: npm install
-      working-directory: cypress-realworld-app
 
-    - name: Run Tests
-      run: npm test
-      working-directory: cypress-realworld-app
+    - name: Run Tests in Chrome
+      run: npm run test:chrome
