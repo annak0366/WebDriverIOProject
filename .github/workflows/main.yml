@@ -26,7 +26,7 @@ jobs:
       run: npm install
 
     - name: Run Application Locally
-      run: yarn dev
+      run: yarn run dev
 
     - name: Run Tests
       run: npm test
