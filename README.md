@@ -21,33 +21,42 @@ To run this project, ensure you have the following prerequisites installed on yo
 ## Steps to Install
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   git clone https://github.com/annak0366/WebDriverIOProject.git
 
 2. Navigate to the project directory:
-   cd your-repo
+   ```bash
+   cd WebDriverIOProject
 
 3. Open terminal or command prompt in the project.
 4. Install dependencies using npm:
-   `npm install`
+   ```bash
+   npm install
 
 ## Steps to launch
 To run the tests, use the following commands:
 
 1) To run all tests using the default configuration, use the following command:
-   `npm run test`
-2) Run tests in headless mode:
-    `npm run test:headless`
-3) Run tests in Chrome:
-   `npm run test:chrome`
-4) Run tests in Firefox:
-   `npm run test:firefox`
-5) Run tests in Edge:
-   `npm run test:edge`
+   ```bash
+   npm run test
+2) Run tests in headless mode: 
+   ```bash
+    npm run test:headless
+4) Run tests in Chrome:
+   ```bash
+   npm run test:chrome
+5) Run tests in Firefox:
+   ```bash
+   npm run test:firefox
+6) Run tests in Edge:
+   ```bash
+   npm run test:edge
 
 ## Steps to creating the report
 1) After running the tests - generate test report using:
-    `npm run test:report`
+    ```bash
+    npm run test:report
 This command will generate test reports using Allure.
  
 2) Open test report:
-   `npm run open:report`
+   ```bash
+   npm run open:report
