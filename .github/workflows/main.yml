@@ -19,20 +19,18 @@ jobs:
 
     - name: Create Working Directory
       run: mkdir -p /home/runner/work/WebDriverIOProject/WebDriverIOProject/cypress-realworld-app
-      
+
     - name: Install Yarn
       run: npm install -g yarn
-      
+
     - name: Install Dependencies
       run: yarn install
-      working-directory: cypress-realworld-app  
-    
-    - name: Install Dependencies
-      run: npm install
+      working-directory: cypress-realworld-app
 
     - name: Run Real World App Locally
       run: yarn dev
       working-directory: cypress-realworld-app
-    
+
     - name: Run Tests
       run: npm test
+      working-directory: cypress-realworld-app
