@@ -1,0 +1,14 @@
+{
+    "firstUser": {
+      "username": "Katharina_Bernier",
+      "password": "s3cret",
+      "balance": 1681.37
+    },
+
+    "secondUser":{
+      "username": "Tavares_Barrows",
+      "password": "s3cret",
+      "balance": 1018.05
+    }
+  }
+  
