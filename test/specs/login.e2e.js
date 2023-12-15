@@ -4,7 +4,7 @@ describe('Login tests', () => {
     beforeEach(() => {
         browser.url('/signin');
     });
-    it('Login with the valid username and invalid password', async() => {
+    it('Login with the valid username and invalid password8', async() => {
         await loginPage.enterInvalidPasswordCredentials();
         await loginPage.clickSignInBtn();
         await expect(loginPage.getErrorMessage()).toHaveText('Username or password is invalid');
