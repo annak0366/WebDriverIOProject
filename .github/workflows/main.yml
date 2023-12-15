@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  deploy_locally:
-    runs-on: ubuntu-latest
+  tests:
+    runs-on: windows-latest
 
     steps:
     - name: Checkout Repository
