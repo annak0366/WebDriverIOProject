@@ -1,29 +1,37 @@
-name: Deploy Locally
-
+name: Run Real World App
 on:
   push:
     branches:
       - master
 
 jobs:
-  tests:
+  install_and_run:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
+    - name: Set up Node.js and Yarn
       uses: actions/setup-node@v3
       with:
         node-version: 18
-    
+        registry-url: https://registry.npmjs.org/
+        cache: 'yarn'
+
     - name: Install Yarn
       run: npm install -g yarn
-  
+        
+    - name: Install Dependencies
+      run: yarn install
+      working-directory: cypress-realworld-app  
     
     - name: Install Dependencies
       run: npm install
 
+    - name: Run Real World App Locally
+      run: yarn dev
+      working-directory: cypress-realworld-app
+    
     - name: Run Tests
       run: npm test
