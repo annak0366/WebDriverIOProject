@@ -2,7 +2,7 @@
 This project focuses on testing various functionalities of the "Cypress Real World App," including login, registration, creation of new transactions, and fund transfer requests. The tests are designed to ensure the proper functioning of critical features in the application. In the project used multiply browsers, and the Allure report is incorporated to provide a detailed and visually appealing representation of test results.
 
 ## Requirements
-To run this project, ensure you have the following prerequisites installed on your system:
+To run this project, ensure you have the following prerequisites installed on your sysstem:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 
